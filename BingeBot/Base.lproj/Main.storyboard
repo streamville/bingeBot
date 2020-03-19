@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,127 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BingeBot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Rq9-1A-2TC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="X0a-Sb-y2a">
+                                <rect key="frame" x="20" y="127" width="335" height="95.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1r-bH-eQM">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scandal, Breaking Bad, Westworld, Rick and Morty, Will and Grace, How To Get Away With Murder." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RO-MW-jQ9">
+                                        <rect key="frame" x="0.0" y="34.5" width="307.5" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="VVT-rU-43p">
+                                <rect key="frame" x="20" y="244" width="335" height="383.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Ro8-gV-iOT">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="128.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT YOU SHOULD WATCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nH-9p-f4a">
+                                                <rect key="frame" x="80.5" y="0.0" width="174.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Westworld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-JX-p2I">
+                                                <rect key="frame" x="99" y="33.5" width="137.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veU-w9-fjV">
+                                                <rect key="frame" x="71.5" y="88.5" width="192" height="40"/>
+                                                <state key="normal" image="binge-btn"/>
+                                                <connections>
+                                                    <action selector="bingeShowBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9p-Hv-bpi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="RhU-81-9vO">
+                                        <rect key="frame" x="0.0" y="290.5" width="335" height="93"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a binge-worthy show" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAY-KX-9ee">
+                                                <rect key="frame" x="20" y="0.0" width="295" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrV-9f-kH5">
+                                                <rect key="frame" x="71.5" y="53" width="192" height="40"/>
+                                                <state key="normal" image="add-show-btn"/>
+                                                <connections>
+                                                    <action selector="addShowBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3cS-5o-Peu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="yAY-KX-9ee" secondAttribute="trailing" id="fmg-LM-Jlk"/>
+                                            <constraint firstItem="yAY-KX-9ee" firstAttribute="leading" secondItem="RhU-81-9vO" secondAttribute="leading" constant="20" symbolic="YES" id="kVN-rq-H35"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" BingeBot 🎬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi3-VE-Pzm">
+                                <rect key="frame" x="122" y="57" width="131" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X0a-Sb-y2a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3ZQ-tZ-O8w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VVT-rU-43p" secondAttribute="trailing" constant="20" id="Ah6-d3-70r"/>
+                            <constraint firstAttribute="trailing" secondItem="X0a-Sb-y2a" secondAttribute="trailing" constant="20" id="CMn-3l-Eb5"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EFZ-qm-mzM"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KOS-EK-Jz2"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LdD-Xk-TWE"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SeP-FL-bjl"/>
+                            <constraint firstItem="VVT-rU-43p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="V5x-8q-ttR"/>
+                            <constraint firstItem="X0a-Sb-y2a" firstAttribute="top" secondItem="Gi3-VE-Pzm" secondAttribute="bottom" constant="20" id="W9Q-P8-5oQ"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZCL-hz-Oel"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a8k-VO-74I"/>
+                            <constraint firstItem="VVT-rU-43p" firstAttribute="top" secondItem="X0a-Sb-y2a" secondAttribute="bottom" constant="20" id="aba-RP-xAW"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jda-F8-cK8"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p1f-o8-5zT"/>
+                            <constraint firstItem="Rq9-1A-2TC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pMv-66-cTL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addShowBtn" destination="GrV-9f-kH5" id="xBJ-9z-vys"/>
+                        <outlet property="addShowInput" destination="yAY-KX-9ee" id="UnZ-BE-psx"/>
+                        <outlet property="addShowStackView" destination="RhU-81-9vO" id="9w3-XF-t3G"/>
+                        <outlet property="bingeBotLbl" destination="1nH-9p-f4a" id="Jzn-MR-MI0"/>
+                        <outlet property="randomShowLbl" destination="0v2-JX-p2I" id="M65-iZ-g8b"/>
+                        <outlet property="randomShowStackView" destination="Ro8-gV-iOT" id="ChI-OQ-FTk"/>
+                        <outlet property="showStackView" destination="X0a-Sb-y2a" id="ybZ-kA-4Wc"/>
+                        <outlet property="showsLabel" destination="6RO-MW-jQ9" id="QMm-7x-tff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add-show-btn" width="192" height="40"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="binge-btn" width="192" height="40"/>
+    </resources>
 </document>
